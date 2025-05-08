@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEBSS - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Fullheight settings */
+.js-fullheight {
+    height: 100vh;
+}
+
+/* Slider item styling */
+.slider-item {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Overlay styles */
+.overlay-1, .overlay-2, .overlay-3, .overlay-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay-1 {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-2 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, transparent 5%);
+}
+
+.overlay-3 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 5%);
+}
+
+.overlay-4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 5%);
+}
+
+/* Button styles */
+.button-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.button-link:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.button-video {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+    color: #000;
+}
+
+.button-video .fa {
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+.fa-play{
+  border-radius: 10px;
+}
+.ftco-counter {
+    position: relative;
+    z-index: 10000;
+    margin-top: -100px; /* Adjust this value to control how much it overlaps */
+}
+
+/* Make sure the counter boxes have a solid background and shadow */
+.ftco-counter .block-18 {
+    background: #fff; /* Or whatever color your blocks should be */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.hero-wrap.js-fullheight {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-slider.js-fullheight {
+    height: 100vh;
+}
+
+.slider-item.js-fullheight {
+    height: 100vh;
+}
+.hero-wrap .container,
+.ftco-counter .container {
+    max-width: 1140px; /* Make sure these match */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 767.98px) {
+    .ftco-counter.ftco-intro {
+        margin-top: 0; /* Remove overlap on mobile */
+        padding-top: 30px;
+    }
+    
+    .ftco-counter .row {
+        flex-direction: column;
+    }
+    
+    .ftco-counter .block-18 {
+        margin-bottom: 20px;
+    }
+}
+.play-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 17px;           /* Height top/bottom, width left */
+  border-color: transparent transparent transparent #c8553d; /* Triangle color */
+  display: inline-block;
+  margin-left: 3px; /* Slightly center the triangle visually */
+}
+.play-triangle {
+  border-color: transparent transparent transparent #fff; /* White triangle */
+}
+    </style>
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MEBSS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="donate.html" class="nav-link" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 120px; text-align: center; background-color: #c8553d; color: #fff;">Donate</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap js-fullheight">
+      <div class="home-slider js-fullheight owl-carousel">
+          <div class="slider-item js-fullheight" style="background-image:url(images/img1.png);">
+              <div class="overlay-1"></div><div class="overlay-2"></div><div class="overlay-3"></div><div class="overlay-4"></div>
+              <div class="container">
+                  <div class="row no-gutters slider-text js-fullheight align-items-center">
+                      <div class="col-md-10 col-lg-7 ftco-animate">
+                          <div class="text w-100">
+                              <h1 class="mb-3">Every Woman and Child Deserves a Brighter Tomorrow</h1>
+                              <div class="d-flex meta">
+                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 200px; text-align: center;">Become A Volunteer</a></p></div>
+                                  <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link" >
+                                      <div class="button-video d-flex align-items-center justify-content-center" >
+                                          <span class="play-triangle"></span>
+                                      </div>
+                                      <span>Watch our video</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Add more slides as needed -->
+          <div class="slider-item js-fullheight" style="background-image:url(images/img2.png);">
+              <div class="overlay-1"></div><div class="overlay-2"></div><div class="overlay-3"></div><div class="overlay-4"></div>
+              <div class="container">
+                  <div class="row no-gutters slider-text js-fullheight align-items-center">
+                      <div class="col-md-10 col-lg-7 ftco-animate">
+                          <div class="text w-100">
+                              <h1 class="mb-3">Empower Women. Uplift Children. Change Futures.</h1>
+                              <div class="d-flex meta">
+                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; width: 180px; text-align: center;">Donate Now</a></p></div>
+                                  <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link">
+                                      <div class="button-video d-flex align-items-center justify-content-center">
+                                          <span class="play-triangle"></span>
+                                      </div>
+                                      <span>Watch our video</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="slider-item js-fullheight" style="background-image:url(images/img3.png);">
+              <div class="overlay-1"></div><div class="overlay-2"></div><div class="overlay-3"></div><div class="overlay-4"></div>
+              <div class="container">
+                  <div class="row no-gutters slider-text js-fullheight align-items-center">
+                      <div class="col-md-10 col-lg-7 ftco-animate">
+                          <div class="text w-100">
+                              <h1 class="mb-3">Together, We Empower Women and Children to Change the World</h1>
+                              <div class="d-flex meta">
+                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Join Us</a></p></div>
+                                  <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link">
+                                      <div class="button-video d-flex align-items-center justify-content-center">
+                                          <span class="play-triangle"></span>
+                                      </div>
+                                      <span>Watch our video</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+    <section class="ftco-counter ftco-intro" id="section-counter" style="z-index: 10000;">
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-1 align-items-stretch">
+              <div class="text">
+              	<span>Served Over</span>
+                <strong class="number" data-number="200">0</strong>
+                <span>Women and Children in Uttarakhand, Mahila Evam Bal Sahayata Samiti</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-2 align-items-stretch">
+              <div class="text">
+              	<h3 class="mb-4">Donate Money</h3>
+              	<p>Your generous donation helps provide education, healthcare, nutrition, and safe shelter to vulnerable women and children.</p>
+              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-3 align-items-stretch">
+              <div class="text">
+              	<h3 class="mb-4">Be a Volunteer</h3>
+              	<p>Volunteering with us means making a real difference in the lives of women and children, building brighter futures.</p>
+              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
+              </div>
+            </div>
+          </div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Make Donation</h3>
+                <p>Your donation provides essential support, education, and healthcare to empower women and children in need.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Become A Volunteer</h3>
+                <p>Join us to make a meaningful impact by supporting women and children through hands-on volunteering.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Sponsorship</h3>
+                <p>Sponsor a woman or child to transform lives with education, healthcare, and opportunities for growth.</p>
+              </div>
+            </div>    
+          </div>
+        </div>
+    	</div>
+    </section>
+
+
+    <section class="ftco-section bg-light">
+    	<div class="container-fluid">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-5 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Causes</h2>
+            <p>We champion education, health, and safety, empowering women and children to overcome challenges and build brighter, self-reliant futures together.</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="carousel-cause owl-carousel">
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="#" class="img" style="background-image: url(images/img10.avif);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="#">Education for Girls</a></h3>
+		    						<p>Empowering girls through quality education, breaking barriers, and opening doors to brighter, independent futures.</p>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="#" class="img" style="background-image: url(images/img1.png);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="#">Women's Skill Development</a></h3>
+		    						<p>Providing skill training for women to achieve financial independence, confidence, and improved livelihoods for their families.</p>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="#" class="img" style="background-image: url(images/img11.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="#">Health & Nutrition</a></h3>
+		    						<p>Ensuring women and children receive essential healthcare, nutrition, and hygiene support for healthy, thriving lives.</p>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="#" class="img" style="background-image: url(images/img12.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="#">Safety & Protection</a></h3>
+		    						<p>Protecting women and children from abuse, trafficking, and violence, offering safe shelter and legal assistance.</p>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="#" class="img" style="background-image: url(images/img13.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="#">Menstrual Hygiene Awareness</a></h3>
+		    						<p>Promoting menstrual health education and access to sanitary products, empowering girls with dignity and confidence.</p>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="#" class="img" style="background-image: url(images/img14.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="#">Child Rights & MEBSS</a></h3>
+		    						<p>Defending children's rights to safety, education, and care, nurturing their growth in safe, supportive environments.</p>
+		    					</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-gallery">
+    	<div class="d-md-flex">
+	    	<a href="images/img1.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img1.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/img2.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img2.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/img3.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img3.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/img4.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img4.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+    	</div>
+    	<div class="d-md-flex">
+	    	<a href="images/img5.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img5.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/img6.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img6.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/img7.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img7.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/img8.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img8.png);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    </div>
+    </section>
+    <div style="display: flex; justify-content: center;" class="mt-5 mb-5">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vRwH9vi-B38?si=wVHsQaTcDHV0bmQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Latest Events</h2>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/img7.png');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  
+                </div>
+                <h3 class="heading mb-4"><a href="#">EmpowerHer Sports Day</a></h3>
+                <p>A fun-filled day of team sports and games designed to boost confidence, teamwork, and physical health among girls and women. Participants enjoy friendly competitions in activities like relay races, football, and volleyball, promoting fitness and empowerment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/img1.png');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                 
+                </div>
+                <h3 class="heading mb-4"><a href="#">Stitching Futures: Sewing Skills Workshop</a></h3>
+                <p>A hands-on sewing event where women and older girls learn tailoring basics, fabric selection, and creative stitching. The workshop empowers participants with practical skills for self-reliance and opens opportunities for income generation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/img5.png');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                </div>
+                <h3 class="heading mb-4"><a href="#">Wellness for All: Community Yoga Morning</a></h3>
+                <p>A group yoga session led by certified instructors, focusing on physical wellness, stress relief, and mindfulness. Open to women and children of all ages, this event encourages healthy habits and emotional balance in a supportive environment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section-3 img" style="background-image: url(images/img9.jpg);">
+    	<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row d-md-flex">
+    		<div class="col-md-6 d-flex ftco-animate">
+    			<div class="img img-2 align-self-stretch" style="background-image: url(images/img10.jpg);"></div>
+    		</div>
+    		<div class="col-md-6 volunteer pl-md-5 ftco-animate">
+    			<h3 class="mb-3">Be a volunteer</h3>
+    			<form action="#" class="volunter-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
+            </div>
+          </form>
+    		</div>    			
+    		</div>
+    	</div>
+    </section>
+
+    <footer class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Us</h2>
+              <p>We empower women and children through education, healthcare, and protection, fostering brighter futures and stronger communities with compassion and support.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                <li><a href="about.html" class="py-2 d-block">About</a></li>
+                <li><a href="" class="py-2 d-block">Donate</a></li>
+                <li><a href="causes.html" class="py-2 d-block">Causes</a></li>
+                <li><a href="event.html" class="py-2 d-block">Event</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">A-86, Awas Vikas, Udham Singh Nagar, Uttarakhand, India - 244713</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | MEBSS</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+    $('.home-slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 0,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        nav: true,
+        autoplayHoverPause: false,
+        items: 1,
+        navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
+        responsive:{
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 1,
+                nav: false
+            },
+            1000:{
+                items: 1,
+                nav: true
+            }
+        }
+    });
+});
+$(document).ready(function() {
+    $('.popup-vimeo').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+});
+
+    </script>
+  </body>
+</html>
