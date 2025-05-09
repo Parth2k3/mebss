@@ -158,37 +158,45 @@
 .play-triangle {
   border-color: transparent transparent transparent #fff; /* White triangle */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add padding to sections to account for fixed navbar */
+section {
+    scroll-margin-top: 80px;
+}
     </style>
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="#home">
         <img src="images/logo.png" alt="MEBSS" style="height: 40px; margin-top: -4px; margin-right: 8px;">
       </a>
-      <a class="navbar-brand" href="index.html">MEBSS</a>   
+      <a class="navbar-brand" href="#home">MEBSS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="donate.html" class="nav-link" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 120px; text-align: center; background-color: #c8553d; color: #fff;">Donate</a></li>
-
+          <li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#causes" class="nav-link">Causes</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#donate" class="nav-link" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 120px; text-align: center; background-color: #c8553d; color: #fff;">Donate</a></li>
         </ul>
       </div>
     </div>
   </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap js-fullheight">
+    <section class="hero-wrap js-fullheight" id="home">
       <div class="home-slider js-fullheight owl-carousel">
           <div class="slider-item js-fullheight" style="background-image:url(images/img1.png);">
               <div class="overlay-1"></div><div class="overlay-2"></div><div class="overlay-3"></div><div class="overlay-4"></div>
@@ -198,7 +206,7 @@
                           <div class="text w-100">
                               <h1 class="mb-3">Every Woman and Child Deserves a Brighter Tomorrow</h1>
                               <div class="d-flex meta">
-                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 200px; text-align: center;">Become A Volunteer</a></p></div>
+                                  <div class=""><p class="mb-0"><a href="#volunteer" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 200px; text-align: center;">Become A Volunteer</a></p></div>
                                   <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link" >
                                       <div class="button-video d-flex align-items-center justify-content-center" >
                                           <span class="play-triangle"></span>
@@ -243,7 +251,7 @@
                           <div class="text w-100">
                               <h1 class="mb-3">Together, We Empower Women and Children to Change the World</h1>
                               <div class="d-flex meta">
-                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Join Us</a></p></div>
+                                  <div class=""><p class="mb-0"><a href="#volunteer" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Join Us</a></p></div>
                                   <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link">
                                       <div class="button-video d-flex align-items-center justify-content-center">
                                           <span class="play-triangle"></span>
@@ -328,8 +336,28 @@
     	</div>
     </section>
 
+    <section class="ftco-section" id="about">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-5 heading-section ftco-animate text-center">
+                <h2 class="mb-4">About Us</h2>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-6 d-flex ftco-animate">
+                <div class="img img-about align-self-stretch" style="background-image: url(images/img15.png); width: 100%;"></div>
+            </div>
+            <div class="col-md-6 pl-md-5 ftco-animate">
+                <h2 class="mb-4">Mahila Evam Bal Sahayata Samiti</h2>
+                <p>At MEBSS, we are dedicated to empowering women and children by providing them with the resources, support, and opportunities they need to thrive. Our mission is to break the cycle of poverty and inequality by focusing on education, healthcare, safety, and skill development. We believe that every woman and child deserves a life of dignity, hope, and opportunity. Through our various programs, we offer educational scholarships, vocational training, health camps, and safe spaces for those at risk.</p>
+                <p>Our passionate team works closely with communities to raise awareness, advocate for rights, and deliver sustainable change. Together with our supporters and volunteers, we strive to build a world where women and children are respected, protected, and empowered to reach their full potential.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="ftco-section bg-light">
+
+    <section class="ftco-section bg-light" id="causes">
     	<div class="container-fluid">
     		<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-5 heading-section ftco-animate text-center">
@@ -400,56 +428,87 @@
     	</div>
     </section>
 
-    <section class="ftco-gallery">
-    	<div class="d-md-flex">
-	    	<a href="images/img1.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img1.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    	<a href="images/img2.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img2.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    	<a href="images/img3.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img3.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    	<a href="images/img4.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img4.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-    	</div>
-    	<div class="d-md-flex">
-	    	<a href="images/img5.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img5.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    	<a href="images/img6.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img6.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    	<a href="images/img7.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img7.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    	<a href="images/img8.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img8.png);">
-	    		<div class="icon d-flex justify-content-center align-items-center">
-	    			<span class="icon-search"></span>
-	    		</div>
-	    	</a>
-	    </div>
+    <section class="ftco-section ftco-gallery" id="gallery">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-5 heading-section ftco-animate text-center">
+                    <h2 class="mb-4">Our Gallery</h2>
+                </div>
+            </div>
+            <div class="container-fluid px-0">
+                <div class="d-md-flex">
+                    <a href="images/img1.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img1.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img2.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img2.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img3.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img3.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img4.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img4.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-md-flex">
+                    <a href="images/img5.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img5.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img6.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img6.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img7.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img7.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img8.png" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img8.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-md-flex">
+                    <a href="images/img9.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img9.jpg);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img10.avif" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img10.avif);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img14.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img14.jpg);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                    <a href="images/img15.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/img15.png);">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-search"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     <div style="display: flex; justify-content: center;" class="mt-5 mb-5">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/vRwH9vi-B38?si=wVHsQaTcDHV0bmQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <section class="ftco-section bg-light">
+    <section class="ftco-section bg-light" id="events">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -499,7 +558,7 @@
       </div>
     </section>
 		
-		<section class="ftco-section-3 img" style="background-image: url(images/img9.jpg);">
+		<section class="ftco-section-3 img" style="background-image: url(images/img9.jpg);" id="volunteer">
     	<div class="overlay"></div>
     	<div class="container">
     		<div class="row d-md-flex">
@@ -525,6 +584,52 @@
     		</div>    			
     		</div>
     	</div>
+    </section>
+
+    <!-- Add Contact section before the footer -->
+    <section class="ftco-section contact-section ftco-degree-bg" id="contact">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-3">
+            <p><span>Address:</span> A-86, Awas Vikas, Udham Singh Nagar, Uttarakhand, India - 244713</p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Phone:</span> <a href="tel://1234567920">+91 9540645660</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Email:</span> <a href="mailto:"></a></p>
+          </div>
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 pr-md-5">
+            <h4 class="mb-4">Do you have any questions?</h4>
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217099.7983619216!2d78.67410009453124!3d29.197528200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a432df9e189f3%3A0x30c175656c5f979f!2sMahila%20Evam%20Baal%20Sahayata%20Samiti!5e1!3m2!1sen!2sin!4v1746773015365!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="ftco-footer ftco-section img">
@@ -637,6 +742,30 @@ $(document).ready(function() {
         removalDelay: 160,
         preloader: false,
         fixedContentPos: false
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Add active class to nav items on scroll
+    window.addEventListener('scroll', function() {
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('.nav-link');
+        
+        sections.forEach(section => {
+            let top = section.offsetTop - 100;
+            let bottom = top + section.offsetHeight;
+            let scroll = window.scrollY;
+            let id = section.getAttribute('id');
+            
+            if (scroll >= top && scroll < bottom) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
     });
 });
 
