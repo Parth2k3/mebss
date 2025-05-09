@@ -176,7 +176,7 @@ section {
       <a class="navbar-brand" href="#home">
         <img src="images/logo.png" alt="MEBSS" style="height: 40px; margin-top: -4px; margin-right: 8px;">
       </a>
-      <a class="navbar-brand" href="#home">MEBSS</a>
+      <a class="navbar-brand ml-4" href="#home">MEBSS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -196,9 +196,9 @@ section {
   </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap js-fullheight" id="home">
-      <div class="home-slider js-fullheight owl-carousel">
-          <div class="slider-item js-fullheight" style="background-image:url(images/img1.png);">
+    <section class="hero-wrap " id="home">
+      <div class="home-slider owl-carousel">
+          <div class="slider-item " style="background-image:url(images/img1.png);">
               <div class="overlay-1"></div><div class="overlay-2"></div><div class="overlay-3"></div><div class="overlay-4"></div>
               <div class="container">
                   <div class="row no-gutters slider-text js-fullheight align-items-center">
@@ -718,6 +718,8 @@ section {
         autoplayHoverPause: false,
         items: 1,
         navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
+        touchDrag: false,
+        mouseDrag: false,
         responsive:{
             0:{
                 items: 1,
