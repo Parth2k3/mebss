@@ -73,6 +73,9 @@
     text-decoration: none;
     margin-left: 20px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .button-link:hover {
@@ -83,10 +86,16 @@
 .button-video {
     width: 50px;
     height: 50px;
+    min-width: 50px; /* Add this to prevent shrinking */
+    min-height: 50px; /* Add this to prevent shrinking */
     border-radius: 50%;
     background: #fff;
     margin-right: 10px;
     color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent the button from shrinking */
 }
 
 .button-video .fa {
@@ -167,6 +176,47 @@ html {
 section {
     scroll-margin-top: 80px;
 }
+
+/* Map responsive styles */
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 767.98px) {
+  .map-responsive {
+    padding-bottom: 75%; /* Slightly taller aspect ratio for mobile */
+  }
+}
+
+/* Add responsive styles for mobile */
+@media (max-width: 767.98px) {
+    .button-video {
+        width: 40px; /* Slightly smaller on mobile */
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .button-link {
+        margin-left: 10px; /* Reduce margin on mobile */
+    }
+    
+    .play-triangle {
+        border-width: 8px 0 8px 14px; /* Slightly smaller triangle for mobile */
+    }
+}
     </style>
   </head>
   <body>
@@ -206,7 +256,7 @@ section {
                           <div class="text w-100">
                               <h1 class="mb-3">Every Woman and Child Deserves a Brighter Tomorrow</h1>
                               <div class="d-flex meta">
-                                  <div class=""><p class="mb-0"><a href="#volunteer" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 200px; text-align: center;">Become A Volunteer</a></p></div>
+                                  <div class=""><p class="mb-0"><a href="#volunteer" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Become A Volunteer</a></p></div>
                                   <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link" >
                                       <div class="button-video d-flex align-items-center justify-content-center" >
                                           <span class="play-triangle"></span>
@@ -229,7 +279,7 @@ section {
                           <div class="text w-100">
                               <h1 class="mb-3">Empower Women. Uplift Children. Change Futures.</h1>
                               <div class="d-flex meta">
-                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; width: 180px; text-align: center;">Donate Now</a></p></div>
+                                  <div class=""><p class="mb-0"><a href="#" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Donate Now</a></p></div>
                                   <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link">
                                       <div class="button-video d-flex align-items-center justify-content-center">
                                           <span class="play-triangle"></span>
@@ -251,7 +301,7 @@ section {
                           <div class="text w-100">
                               <h1 class="mb-3">Together, We Empower Women and Children to Change the World</h1>
                               <div class="d-flex meta">
-                                  <div class=""><p class="mb-0"><a href="#volunteer" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Join Us</a></p></div>
+                                  <div class=""><p class="mb-0"><a href="#volunteer" class="btn btn-secondary py-3 px-2 px-md-4" style="border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; width: 180px; text-align: center;">Contribute</a></p></div>
                                   <a href="https://www.youtube.com/watch?v=vRwH9vi-B38" class="d-flex align-items-center button-link">
                                       <div class="button-video d-flex align-items-center justify-content-center">
                                           <span class="play-triangle"></span>
@@ -275,8 +325,8 @@ section {
             <div class="block-18 color-1 align-items-stretch">
               <div class="text">
               	<span>Served Over</span>
-                <strong class="number" data-number="200">0</strong>
-                <span>Women and Children in Uttarakhand, Mahila Evam Bal Sahayata Samiti</span>
+                <strong class="number" data-number="500">0</strong>
+                <span>Women and Children in Uttarakhand since <b>2011</b>, Mahila Evam Bal Sahayata Samiti</span>
               </div>
             </div>
           </div>
@@ -626,7 +676,9 @@ section {
             </form>
           </div>
           <div class="col-md-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217099.7983619216!2d78.67410009453124!3d29.197528200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a432df9e189f3%3A0x30c175656c5f979f!2sMahila%20Evam%20Baal%20Sahayata%20Samiti!5e1!3m2!1sen!2sin!4v1746773015365!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217099.7983619216!2d78.67410009453124!3d29.197528200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a432df9e189f3%3A0x30c175656c5f979f!2sMahila%20Evam%20Baal%20Sahayata%20Samiti!5e1!3m2!1sen!2sin!4v1746773015365!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
